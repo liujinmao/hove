@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="jquery.min.js"></script>
+  <script src="demo.js"></script>
+  <style>
+    *,
+    *:after,
+    *:before {
+    	-webkit-box-sizing: border-box;
+    	-moz-box-sizing: border-box;
+    	box-sizing: border-box;
+    }
+    body{
+    	background: #fff;
+    	color: #D5D6E2;
+    	font-weight: 500;
+    	font-size: 1.05em;
+    	font-family: "Microsoft YaHei","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif;
+    }
+    ul {margin:0; padding: 0; overflow: hidden;}
+    .wrap { width: 800px;  margin: 100px auto;}
+    .wrap ul li { list-style: none; float: left; margin: 5px; width: 230px; height: 230px; position: relative; overflow: hidden;}
+    .wrap ul li img { display: block; max-width: 100%;}
+    .wrap ul li .cove { width: 230px; height: 230px; position: absolute; top: 0; left: 230px; background: rgba(0,0,0,0.5); padding: 50px 0 0 0;}
+    .wrap ul li .cove p { font-size: 14px; color: #fff; text-align: center;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+		<ul>
+			<li>
+				<img src="img/mountain-1.jpg" alt="图片">
+				<a href="">
+					<div class="cove">
+						<p>pci1</p>
+						<p>Picture info 1</p>
+					</div>
+				</a>
+
+			</li>
+			<li>
+				<img src="img/mountain-2.jpg" alt="">
+				<a href="">
+					<div class="cove">
+						<p>pci2</p>
+						<p>Picture info 2</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<img src="img/mountain-3.jpg" alt="">
+				<a href="">
+					<div class="cove">
+						<p>pci3</p>
+						<p>Picture info 3</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<img src="img/mountain-4.jpg" alt="">
+				<a href="">
+					<div class="cove">
+						<p>pci4</p>
+						<p>Picture info 4</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<img src="img/mountain-5.jpg" alt="">
+				<a href="">
+					<div class="cove">
+						<p>pci5</p>
+						<p>Picture info 5</p>
+					</div>
+				</a>
+			</li>
+            <li>
+				<img src="img/mountain-6.jpg" alt="">
+				<a href="">
+					<div class="cove">
+						<p>pci6</p>
+						<p>Picture info 6</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+  <script type="text/javascript">
+
+    let move = new window.Move({
+      content: $('.wrap ul li'),
+      cover: $('.cove')
+    })
+    console.log(move)
+	</script>
+</body>
+</html>
